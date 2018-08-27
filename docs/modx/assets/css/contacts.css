@@ -1,0 +1,75 @@
+.p-marg {
+    margin-bottom: 8px;
+}
+.city {
+    font-weight: 700;
+}
+.object {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.block-big {
+    margin-bottom: 30px;
+}
+.icon-block {
+    position: relative; 
+    padding-left: 23px;
+}
+.space:before  {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-left: -23px;
+    position: absolute;
+	}
+.call:before  {
+    content: "";
+    display: block;
+    background: url("/modx/assets/images/icons/if_call.png") no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-left: -23px;
+    margin-top: 3px;
+    position: absolute;
+	}
+.map-marker:before  {
+    content: "";
+    display: block;
+    background: url("/modx/assets/images/icons/if_map-marker.png") no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-left: -23px;
+    margin-top: 3px;
+    position: absolute;
+	}
+.clock:before  {
+    content: "";
+    display: block;
+    background: url("/modx/assets/images/icons/if_clock.png") no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-left: -23px;
+    margin-top: 3px;
+    position: absolute;
+	}
+.email:before  {
+    content: "";
+    display: block;
+    background: url("/modx/assets/images/icons/if_email.png") no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-left: -23px;
+    margin-top: 3px;
+    position: absolute;
+	}
+.fax:before  {
+    content: "";
+    display: block;
+    background: url("/modx/assets/images/icons/if_fax.png") no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-left: -23px;
+    margin-top: 3px;
+    position: absolute;
+	}

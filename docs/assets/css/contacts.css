@@ -1,0 +1,222 @@
+h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #2f4d59;
+    font-family: "Open Sans";
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 26px;
+    text-align: center;
+    color: #2f4d59;
+    font-family: "Open Sans";
+    padding: 20px;
+}
+
+.block {
+    font-family: "Open Sans";
+    color: #678293;
+    font-size: 14px;
+}
+
+.p-marg {
+    margin-bottom: 8px;
+}
+
+.city {
+    font-weight: 700;
+}
+
+.object {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.block-big {
+    margin-bottom: 30px;
+}
+
+.icon-block {
+    position: relative;
+    padding-left: 23px;
+}
+
+.space:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-left: -23px;
+    position: absolute;
+}
+
+.call:before {
+    content: "";
+    display: block;
+    background: url("/assets/images/icons/if_call.png") no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-left: -23px;
+    margin-top: 3px;
+    position: absolute;
+}
+
+.map-marker:before {
+    content: "";
+    display: block;
+    background: url("/assets/images/icons/if_map-marker.png") no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-left: -23px;
+    margin-top: 3px;
+    position: absolute;
+}
+
+.clock:before {
+    content: "";
+    display: block;
+    background: url("/assets/images/icons/if_clock.png") no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-left: -23px;
+    margin-top: 3px;
+    position: absolute;
+}
+
+.email:before {
+    content: "";
+    display: block;
+    background: url("/assets/images/icons/if_email.png") no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-left: -23px;
+    margin-top: 3px;
+    position: absolute;
+}
+
+.fax:before {
+    content: "";
+    display: block;
+    background: url("/assets/images/icons/if_fax.png") no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-left: -23px;
+    margin-top: 3px;
+    position: absolute;
+}
+
+.march {
+    background-image: url(/assets/images/banners/8marchcont.jpg);
+    background-size: contain;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.erem {
+    background-image: url(/assets/images/banners/eremcon.jpg);
+    background-size: contain;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.shush {
+    background-image: url(/assets/images/banners/shush.jpg);
+    background-size: contain;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.othercon {
+    border: 5px solid #dedede;
+    padding: 10px;
+    min-height: 338px;
+    margin-bottom: 30px;
+}
+
+.othercon2 {
+    border: 5px solid #dedede;
+    padding: 10px;
+    min-height: 375px;
+    margin-bottom: 30px;
+}
+
+.othercon3 {
+    border: 5px solid #ffcaab;
+    padding: 10px;
+    min-height: 338px;
+    margin-bottom: 30px;
+}
+
+.othercon4 {
+    border: 5px solid #ffcaab;
+    padding: 10px;
+    min-height: 375px;
+    margin-bottom: 30px;
+}
+
+.fas {
+    padding-right: 10px;
+}
+
+@media (min-width: 1024px) and (max-width: 1150px) {
+    .march {
+        background-image: none !important;
+        background-color: #dcdcdc;
+        padding: 10px;
+    }
+
+    .erem {
+        background-image: none !important;
+        background-color: #ffceae;
+        padding: 10px;
+    }
+
+    .shush {
+        background-image: none !important;
+        background-color: #ffceae;
+        padding: 10px;
+    }
+
+    .block {
+        font-size: 13px;
+    }
+
+    .othercon, .othercon3 {
+        min-height: 327px;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1023px) {
+    .march {
+        background-image: none !important;
+        background-color: #dcdcdc;
+        padding: 10px;
+    }
+
+    .erem {
+        background-image: none !important;
+        background-color: #ffceae;
+        padding: 10px;
+    }
+
+    .shush {
+        background-image: none !important;
+        background-color: #ffceae;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 749px) {
+    .row {
+        margin: 0 !important;
+    }
+
+    .icon-block {
+        padding-left: 0;
+    }
+
+    .moscowcity {
+        padding-left: 23px;
+    }
+}

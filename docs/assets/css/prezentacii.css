@@ -1,0 +1,31 @@
+h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #2f4d59;
+    font-family: "Open Sans";
+    padding-bottom: 20px;
+}
+h2 {
+    font-size: 26px;
+    text-align: center;
+    color: #2f4d59;
+    font-family: "Open Sans";
+    padding: 20px;
+}
+h6{
+     font-size: 16px;
+     font-weight: 500;
+}
+.block {
+    font-family: "Open Sans";
+    color: #678293;
+    font-size: 14px;
+}
+.presentation {
+    margin-bottom: 30px;
+}
+.presentation img {
+    width: 165px;
+    margin-bottom: 15px;
+    border: 1px solid #d5d7d8;
+}

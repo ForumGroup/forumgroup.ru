@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+}
+
+#topHeader {
+    background-color: #f9f9f9;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+#logo img {
+    width: 220px;
+}
+
+#logo {
+ padding-top: 35px;
+}
+
+.topMenu {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Open Sans";
+    font-size: 24px;
+    min-width: 60%;
+    padding-top: 30px;
+}
+
+.topMenu a {
+    color: #2f4d59;
+    transition: 0.15s linear;
+}
+
+.topMenu a:hover {
+    color: #ef7101;
+    text-decoration: none;
+}
+
+#ecom {
+    display: block;
+    width: 190px;
+    height: 50px;
+    background-color: #ef7101;
+    color: white;
+    font-family: "Open Sans";
+    line-height: 50px;
+    font-size: 24px;
+    text-align: center;
+    transition: 0.15s linear;
+    margin-top: 22px;
+}
+
+.topButtonGroup {
+    display: flex;
+}
+
+#ecom:hover {
+    background-color: #2f4d59;
+    text-decoration: none;
+}
+
+.babelHead {
+    padding-top: 26px;
+}
+
+.babelHead li {
+    list-style-type: none;
+    display: block;
+    width: 28px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.babelHead li a {
+    color: #ef7101;
+}
+
+.babelHead .active {
+    color: #79888e;
+}
+
+.babelHead .active:hover {
+    color: #79888e;
+    text-decoration: none;
+    cursor: default;
+}
+
+.babelHead .active {
+}
+
+#botHeader {
+    background-color: #4b5f6c;
+    height: 60px;
+}
+
+#botHeader .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#botHeader a {
+    color: white;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 60px;
+    transition: 0.15s linear;
+}
+
+#botHeader a:hover {
+    text-decoration: none;
+    color: #ef7101;
+}
+
+#footer {
+    min-height: 600px;
+    background-color: #79898f;
+    padding: 100px 0 0 0;
+}
+
+#footer p {
+    font-family: OpenSans;
+    color: #f9f9f9;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 30px 0;
+}
+
+#footer .fab {
+    color: #f9f9f9;
+    font-size: 18px;
+    padding-right: 20px;
+    transition: 0.15s linear;
+}
+
+#footer .fab:hover {
+    color: #ef7101;
+    text-decoration: none;
+}
+
+.footmenu {
+    padding: 30px 40px;
+}
+
+.footmenu a {
+    font-family: OpenSans;
+    color: #f9f9f9;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.footcont {
+    padding: 30px 20px;
+}
+
+.footcont a {
+    display: block;
+    font-family: OpenSans;
+    color: #f9f9f9;
+    font-size: 24px;
+    font-weight: 400;
+    transition: 0.15s linear;
+}
+
+.footmenu a:hover, .footcont a:hover {
+    color: #ef7101;
+    text-decoration: none;
+}
+
+#footbut {
+    padding: 5px;
+    background-color: #5b6b72;
+    width: 210px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+#footbut:hover {
+    background-color: #ef7101;
+    color: #f9f9f9;
+}
+
+.footIconGroup img {
+    padding: 18px 20px;
+}
+
+.block {
+    padding: 30px 0;
+}
+
+.pos {
+    padding: 20px;
+}
+
+.posImg {
+    background-position: center;
+    display: block;
+}
+
+.posImg:hover {
+    text-decoration: none;
+}
+
+.posBack {
+    font-size: 45px;
+    color: white;
+    font-weight: 800;
+    width: 100%;
+    min-height: 270px;
+    transition: 0.15s linear;
+}
+
+.posBack:hover {
+    background-color: rgba(238, 113, 5, 0.7);
+}

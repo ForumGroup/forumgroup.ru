@@ -1,0 +1,1471 @@
+//colors
+$color_alto_approx: #dcdcdc;
+$color_onahau_approx: #cfedf7;
+$color_apricot_peach_approx: #ffceae;
+$white: white;
+$color_lynch_approx: #678394;
+$color_alabaster_approx: #f9f9f9;
+$color_clementine_approx: #ef7101;
+$color_pickled_bluewood_approx: #2f4d59;
+$color_slate_gray_approx: #79888e;
+$color_blue_bayoux_approx: #4b5f6c;
+$color_shuttle_gray_approx: #5b6b72;
+$color_clementine_70_approx: rgba(238, 113, 5, 0.7);
+
+//fonts
+$font_0: Open Sans;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font_0;
+}
+
+#topHeader {
+  background-color: $color_alabaster_approx;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.logo {
+  padding-top: 35px;
+  img {
+    width: 220px;
+  }
+}
+
+.logoFix {
+  padding-top: 12px;
+  img {
+    width: 220px;
+  }
+}
+
+.showMob {
+  display: none;
+  .mobItemUtp {
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 3px solid $color_clementine_approx;
+    h2 {
+      font-size: 28px;
+    }
+  }
+}
+
+.topMenu {
+  display: flex;
+  justify-content: space-around;
+  font-family: $font_0;
+  font-size: 24px;
+  min-width: 60%;
+  padding-top: 30px;
+  a {
+    color: $color_pickled_bluewood_approx;
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: 0.15s linear;
+    &:hover {
+      color: $color_clementine_approx;
+      text-decoration: none;
+    }
+  }
+}
+
+.telep {
+  font-family: $font_0;
+  font-size: 24px;
+  padding-top: 5px;
+  color: $white;
+  padding-right: 30px;
+  //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: 0.15s linear;
+  &:hover {
+    color: $color_clementine_approx;
+    text-decoration: none;
+  }
+}
+
+#ecom {
+  display: block;
+  width: 190px;
+  height: 50px;
+  background-color: $color_clementine_approx;
+  color: $white;
+  font-family: $font_0;
+  line-height: 50px;
+  font-size: 24px;
+  text-align: center;
+  //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: 0.15s linear;
+  margin-top: 22px;
+  &:hover {
+    background-color: $color_pickled_bluewood_approx;
+    text-decoration: none;
+  }
+}
+
+#ecomFix {
+  display: block;
+  width: 170px;
+  height: 40px;
+  background-color: $color_clementine_approx;
+  color: $white;
+  font-family: $font_0;
+  line-height: 40px;
+  font-size: 24px;
+  text-align: center;
+  //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: 0.15s linear;
+  margin-top: 5px;
+  &:hover {
+    background-color: $color_pickled_bluewood_approx;
+    text-decoration: none;
+  }
+}
+
+.topButtonGroup {
+  display: flex;
+}
+
+.babelHead {
+  padding-top: 26px;
+  li {
+    list-style-type: none;
+    display: block;
+    width: 28px;
+    font-family: $font_0;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-weight: 700;
+    a {
+      color: $color_clementine_approx;
+    }
+  }
+  .active {
+    color: $color_slate_gray_approx;
+  }
+  .active:hover {
+    text-decoration: none;
+    cursor: default;
+  }
+}
+
+#fixheader {
+  display: none;
+  background-color: $color_blue_bayoux_approx;
+  height: 50px;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+  width: 100%;
+  .babelHead {
+    padding-top: 5px;
+    padding-left: 20px;
+    display: block;
+    padding-top: 5px;
+    .active {
+      color: $white;
+    }
+  }
+  #ecomFix {
+    margin-top: 5px;
+    display: block;
+    font-size: 18px;
+  }
+  .menubut {
+    font-size: 28px;
+    padding-top: 5px;
+  }
+}
+
+#botHeader {
+  background-color: $color_blue_bayoux_approx;
+  height: 60px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  a {
+    color: $white;
+    font-family: $font_0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 60px;
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: 0.15s linear;
+    &:hover {
+      text-decoration: none;
+      color: $color_clementine_approx;
+    }
+  }
+}
+
+#footer {
+  min-height: 600px;
+  background-color: $color_blue_bayoux_approx;
+  padding: 100px 0 0;
+  p {
+    font-family: $font_0;
+    color: $color_alabaster_approx;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 30px 0;
+  }
+  .fab {
+    color: $color_alabaster_approx;
+    font-size: 18px;
+    padding-right: 20px;
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: 0.15s linear;
+    &:hover {
+      color: $color_clementine_approx;
+      text-decoration: none;
+    }
+  }
+}
+
+.footmenu {
+  padding: 30px 40px;
+  a {
+    font-family: $font_0;
+    color: $color_alabaster_approx;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+    &:hover {
+      color: $color_clementine_approx;
+      text-decoration: none;
+    }
+  }
+}
+
+.footcont {
+  padding: 30px 20px;
+  a {
+    display: block;
+    font-family: $font_0;
+    color: $color_alabaster_approx;
+    font-size: 22px;
+    font-weight: 400;
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: 0.15s linear;
+    padding-bottom: 5px;
+    &:hover {
+      color: $color_clementine_approx;
+      text-decoration: none;
+    }
+  }
+}
+
+#footbut {
+  padding: 5px;
+  color: $white;
+  background-color: $color_shuttle_gray_approx;
+  width: 210px;
+  text-align: center;
+  margin-top: 80px;
+  cursor: pointer;
+  &:hover {
+    background-color: $color_clementine_approx;
+    color: $color_alabaster_approx;
+  }
+}
+
+.block {
+  padding: 30px 0;
+}
+
+.pos {
+  padding: 20px;
+}
+
+.posImg {
+  background-position: center;
+  display: block;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.posBack {
+  font-size: 45px;
+  color: $white;
+  font-weight: 800;
+  width: 100%;
+  min-height: 270px;
+  //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: 0.15s linear;
+  &:hover {
+    background-color: $color_clementine_70_approx;
+  }
+}
+
+#laptopHeader {
+  display: none;
+  max-height: 90px;
+  background-color: $color_blue_bayoux_approx;
+  justify-content: space-between;
+  padding: 20px 50px;
+  .babelHead {
+    padding-top: 5px;
+  }
+  .telep {
+    padding-top: 5px;
+  }
+}
+
+@media(min-width: 1920px) {
+  .homeslide {
+    min-height: 784px;
+  }
+  .aboutFG {
+    padding: 0 60px;
+    text-align: center;
+  }
+  .dropdown-menu {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translate3d(-160px, 80px, 0) !important;
+  }
+  #fixheader .dropdown-menu {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translate3d(-160px, 60px, 0) !important;
+  }
+}
+
+@media(min-width: 1151px) and(max-width: 1919px) {
+  .homeslide {
+    min-height: 600px;
+  }
+  #fixheader {
+    .babelHead {
+      padding-top: 5px !important;
+    }
+    .dropdown-menu {
+      //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+      transform: translate3d(-160px, 60px, 0) !important;
+    }
+  }
+  .aboutFG {
+    padding: 0 60px;
+    text-align: center;
+  }
+  .dropdown-menu {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translate3d(-160px, 80px, 0) !important;
+  }
+}
+
+@media(min-width: 1024px) and(max-width: 1150px) {
+  .topMenu {
+    display: none;
+  }
+  .showMob {
+    display: block;
+  }
+  .hideMob {
+    display: none;
+  }
+  #forummap {
+    display: none;
+  }
+  #header {
+    display: none;
+  }
+  #fixheader {
+    display: none;
+    .dropdown-menu {
+      //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+      transform: translate3d(-160px, 60px, 0) !important;
+    }
+    .babelHead {
+      padding-top: 5px !important;
+    }
+  }
+  #carouselExampleIndicators {
+    min-height: 600px;
+  }
+  .homeslide {
+    min-height: 600px;
+  }
+  .homeBlock1 {
+    background-image: none !important;
+    background-color: $color_alto_approx;
+    img {
+      max-width: 140px;
+    }
+    p {
+      font-size: 12px !important;
+    }
+  }
+  .homeBlock2 {
+    background-image: none !important;
+    background-color: $color_alto_approx;
+    img {
+      max-width: 140px;
+    }
+    p {
+      font-size: 12px !important;
+    }
+  }
+  .homeBlock3 {
+    background-image: none !important;
+    background-color: $color_onahau_approx;
+    img {
+      max-width: 140px;
+    }
+    p {
+      font-size: 12px !important;
+    }
+  }
+  .homeBlock5 {
+    background-image: none !important;
+    background-color: $color_apricot_peach_approx !important;
+    p {
+      font-size: 12px !important;
+    }
+  }
+  .onlineBlock2 {
+    background-image: none !important;
+    background-color: $color_apricot_peach_approx !important;
+  }
+  .onlineBlock3 {
+    background-image: none !important;
+    background-color: $color_alto_approx !important;
+  }
+  .smallGray {
+    font-size: 26px !important;
+  }
+  #laptopHeader {
+    display: flex;
+  }
+  .logoMob {
+    display: flex;
+    img {
+      padding-top: 12px;
+    }
+  }
+  .posImg {
+    background-size: cover !important;
+  }
+  .rkb {
+    p {
+      font-size: 14px !important;
+    }
+    .homeBlock1 img {
+      max-width: 300px;
+    }
+    .homeBlock2 img {
+      max-width: 300px;
+    }
+    .homeBlock3 img {
+      min-width: 150px;
+    }
+  }
+  .orangeAbout3 {
+    min-height: 581px !important;
+  }
+  .dropdown-menu {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translate3d(-120px, 80px, 0) !important;
+  }
+  .smallBlue {
+    font-size: 20px !important;
+  }
+  .onlineAbout {
+    background-image: none !important;
+    background-color: $color_alto_approx !important;
+  }
+  .homeBlock4 img {
+    max-width: 140px;
+  }
+  .footcont a {
+    font-size: 16px;
+  }
+  .footmenu a {
+    font-size: 13px;
+  }
+  .poizHead p {
+    color: $white;
+    font-size: 22px !important;
+    padding-top: 20px;
+  }
+}
+
+@media(min-width: 750px) and(max-width: 1023px) {
+  .bannerHuge {
+    font-size: 32px !important;
+  }
+
+  .babelHead {
+    display: none;
+  }
+  .showMob {
+    display: block;
+  }
+  .numbersInner {
+    margin: 50px 0 !important;
+  }
+  .hideMob {
+    display: none;
+  }
+  .utpBG1, .utpBG2, .utpBG3, .utpBG4 {
+    height: 200px !important;
+    max-width: 350px !important;
+  }
+  .utp h2 {
+    font-size: 20px !important;
+  }
+  .posImg {
+    background-size: cover !important;
+  }
+  #fixheader {
+    display: none;
+    .babelHead {
+      padding-top: 5px !important;
+    }
+    .dropdown-menu {
+      //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+      transform: translate3d(-160px, 60px, 0) !important;
+    }
+  }
+  .topMenu {
+    display: none;
+  }
+  #forummap {
+    display: none;
+  }
+  #header {
+    display: none;
+  }
+  .homeslide {
+    min-height: 350px !important;
+    min-height: 600px;
+  }
+  .homeBlock1 {
+    background-image: none !important;
+    background-color: $color_alto_approx;
+    min-height: 618px !important;
+    img {
+      max-width: 140px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .homeBlock2 {
+    background-image: none !important;
+    background-color: $color_alto_approx;
+    img {
+      max-width: 140px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .homeBlock3 {
+    background-image: none !important;
+    background-color: $color_onahau_approx;
+    min-height: 306px !important;
+    img {
+      max-width: 140px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .homeBlock4 {
+    min-height: 306px !important;
+    img {
+      max-width: 140px;
+    }
+  }
+  .homeBlock5 {
+    background-image: none !important;
+    background-color: $color_apricot_peach_approx !important;
+    min-height: 306px !important;
+    p {
+      font-size: 12px;
+    }
+  }
+  #laptopHeader {
+    display: flex;
+  }
+  .telep {
+    display: none;
+  }
+  .aboutFG {
+    text-align: center;
+  }
+  .footcont {
+    display: flex;
+    justify-content: space-between;
+    a {
+      font-size: 18px;
+    }
+  }
+  #footbut {
+    display: none;
+  }
+  .orangeAbout {
+    background-size: cover !important;
+  }
+  .orangeAbout3 {
+    background-size: cover !important;
+  }
+  .numbersInner {
+    width: 100% !important;
+  }
+  .dropdown-menu {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translate3d(-120px, 80px, 0) !important;
+  }
+  .onlineBlock1 {
+    min-height: 0 !important;
+    margin-bottom: 20px;
+  }
+  .onlineBlock2 {
+    background-image: none !important;
+    background-color: $color_apricot_peach_approx !important;
+  }
+  .onlineBlock3 {
+    background-image: none !important;
+    background-color: $color_alto_approx !important;
+  }
+  .poizHead {
+    p {
+      color: $white;
+      font-size: 22px !important;
+      padding-top: 10px;
+    }
+    h1 {
+      padding-top: 45px !important;
+    }
+  }
+  .logoMob img {
+    padding-top: 16px;
+  }
+}
+
+@media(min-width: 321px) and(max-width: 749px) {
+  .bannerHuge {
+    font-size: 20px !important;
+  }
+
+  .babelHead {
+    display: none;
+  }
+  .showMob {
+    display: block;
+    .mobItemUtp {
+      padding: 0 20px;
+      border-right: 3px solid $color_clementine_approx;
+      a {
+        display: block;
+        position: relative;
+        color: $color_clementine_approx;
+        font-size: 18px !important;
+        text-align: center;
+      }
+      h2 {
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+  }
+  .aboutFG {
+    h1 {
+      font-size: 24px !important;
+    }
+
+    p {
+      font-size: 16px !important;
+    }
+  }
+  .hideMob {
+    display: none;
+  }
+  .topMenu {
+    display: none;
+  }
+  .utp {
+    display: none;
+    margin-top: 20px !important;
+  }
+  #forummap {
+    display: none;
+  }
+  #header {
+    display: none;
+  }
+  .homeslide {
+    min-height: 270px !important;
+  }
+  .homeBlock1 {
+    background-image: none !important;
+    background-color: $color_alto_approx;
+    min-height: 50px !important;
+    margin-bottom: 20px;
+    img {
+      max-width: 140px !important;
+      max-width: 220px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .homeBlock2 {
+    background-image: none !important;
+    background-color: $color_alto_approx;
+    img {
+      max-width: 140px !important;
+      max-width: 220px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .homeBlock3 {
+    background-image: none !important;
+    background-color: $color_onahau_approx;
+    min-height: 0 !important;
+    img {
+      max-width: 140px !important;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .homeBlock4 {
+    min-height: 0 !important;
+    img {
+      max-width: 140px !important;
+    }
+  }
+  .homeBlock5 {
+    background-image: none !important;
+    background-color: $color_apricot_peach_approx !important;
+    min-height: 0 !important;
+    p {
+      font-size: 12px;
+    }
+  }
+  #laptopHeader {
+    display: flex;
+    padding: 0 15px;
+    .menubut {
+      font-size: 24px;
+      margin: 5px 0;
+    }
+    .dropdown-menu {
+      //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+      transform: translate3d(-171px, 55px, 0) !important;
+      //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+      transform: translate3d(-290px, 55px, 0) !important;
+    }
+    .babelHead {
+      padding-top: 14px;
+    }
+  }
+  #fixheader {
+    .dropdown-menu {
+      //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+      transform: translate3d(-171px, 55px, 0) !important;
+      //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+      transform: translate3d(-276px, 55px, 0) !important;
+    }
+    .topButtonGroup {
+      width: 100%;
+    }
+    .babelHead {
+      padding-left: 20px;
+      display: flex;
+      padding-top: 9px;
+    }
+  }
+  #ecomFix {
+    font-size: 14px;
+    display: none;
+    margin-top: 12px;
+  }
+  .topButtonGroup {
+    justify-content: space-between;
+  }
+  .menubut {
+    padding-top: 5px !important;
+  }
+  .telep {
+    display: none;
+  }
+  .aboutFG {
+    text-align: center;
+    margin: 40px 0 0 0 !important;
+  }
+  .footcont {
+    display: block;
+    justify-content: space-between;
+    font-size: 18px;
+    a {
+      font-size: 18px;
+    }
+  }
+  #footbut {
+    display: none;
+  }
+  .orangeAbout {
+    background-size: cover !important;
+    background-image: none !important;
+    background-color: $color_alto_approx !important;
+  }
+  .orangeAbout3 {
+    background-size: cover !important;
+    background-image: none !important;
+    min-height: 0 !important;
+  }
+  .numbers {
+    text-align: center;
+  }
+  .numbersInner {
+    border-top: 1px solid $color_lynch_approx !important;
+    margin: 40px 0 !important;
+  }
+  .complexGray {
+    margin: 60px 0 !important;
+  }
+  .childText {
+    padding: 20px 3px !important;
+  }
+  .mobileRow {
+    margin: 0 !important;
+  }
+  .mobileP {
+    padding: 0 20px;
+  }
+  .posImg {
+    background-size: cover !important;
+  }
+  .logoFix {
+    display: none;
+  }
+  .dropdown-item {
+    font-size: 26px;
+  }
+  .march {
+    background-image: none !important;
+    background-color: $color_alto_approx !important;
+  }
+  .erem {
+    background-image: none !important;
+    background-color: $color_apricot_peach_approx !important;
+  }
+  .shush {
+    background-image: none !important;
+    background-color: $color_apricot_peach_approx !important;
+  }
+  #carouselHistory {
+    display: none;
+  }
+  .polygon {
+    display: none;
+  }
+  .onle {
+    font-size: 12px;
+    padding: 0 10px;
+    h3 {
+      font-size: 22px;
+    }
+    .col-lg-12 {
+      padding: 0 !important;
+    }
+    .far {
+      display: none;
+    }
+    .fas {
+      display: none;
+    }
+  }
+  #footer {
+    padding: 40px 0 0;
+    .fab {
+      font-size: 46px;
+      margin-bottom: 40px;
+    }
+    .row {
+      text-align: center;
+    }
+    .footmenu {
+      padding: 0;
+      a {
+        font-size: 18px;
+      }
+    }
+  }
+  .onlineHead {
+    background-image: none !important;
+    min-height: 0 !important;
+  }
+  .onlineBlack {
+    min-height: 0 !important;
+    h2 {
+      font-size: 26px !important;
+      padding: 0 20px !important;
+    }
+    p {
+      font-size: 16px !important;
+      padding: 0 20px 20px 20px !important;
+    }
+  }
+  .onlineBlock2 {
+    background-image: none !important;
+    background-color: $color_apricot_peach_approx !important;
+  }
+  .onlineBlock3 {
+    background-image: none !important;
+    background-color: $color_alto_approx !important;
+  }
+  .poizHead {
+    background-image: url(/assets/images/banners/proizmob.jpg) !important;
+    h1 {
+      font-size: 36px !important;
+      padding-top: 45px !important;
+      text-align: center !important;
+    }
+    p {
+      color: $white;
+      font-size: 16px !important;
+      padding-top: 20px !important;
+      text-align: center;
+    }
+  }
+  .babelHead li {
+    list-style-type: none;
+    display: block;
+    width: 28px;
+    font-family: $font_0;
+    font-size: 20px;
+    text-align: center;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 10px;
+  }
+  .logoMob img {
+    padding-top: 17px;
+  }
+  .rowCr .row {
+    margin: 0 !important;
+  }
+  .rowBl .col-lg-12 {
+    padding: 0 !important;
+    padding: 0 !important;
+  }
+  .Block1 {
+    min-height: 0 !important;
+    background-size: contain;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .eui-Block1-BG, .kk-Block1-BG, .kabel-Block1-BG, .kabel-Block2-BG, .nvo-Block1-BG, .svet-Block1-BG, .svet-Block2-BG {
+    background-image: none !important;
+    background-color: $color_alto_approx;
+  }
+  .Block2, .Block3, .Block4, .Block5 {
+    min-height: 0 !important;
+    margin-bottom: 20px;
+  }
+  .eui-Block2-BG, .kk-Block2-BG, .kabel-Block4-BG, .nvo-Block2-BG, .svet-Block4-BG, .svet-Block5-BG {
+    background-image: none !important;
+    background-color: $color_apricot_peach_approx;
+  }
+  .eui-Block3-BG, .kk-Block5-BG, .kabel-Block5-BG, .nvo-Block3-BG, .svet-Block3-BG {
+    background-image: none !important;
+    background-color: $color_alto_approx;
+  }
+  .eui-Block5-BG, .kk-Block3-BG, .kabel-Block3-BG, .nvo-Block5-BG {
+    background-image: none !important;
+    background-color: white !important;
+  }
+  .childText {
+    padding: 0 10px !important;
+  }
+  .numbersInner {
+    width: 100% !important;
+  }
+}
+
+@media(min-width: 100px) and(max-width: 320px) {
+  .bannerHuge {
+    font-size: 16px !important;
+  }
+
+  .Block1 {
+    min-height: 0 !important;
+    background-size: contain;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .eui-Block1-BG, .kk-Block1-BG, .kabel-Block1-BG, .kabel-Block2-BG, .nvo-Block1-BG, .svet-Block1-BG, .svet-Block2-BG {
+    background-image: none !important;
+    background-color: $color_alto_approx;
+  }
+  .Block2, .Block3, .Block4, .Block5 {
+    min-height: 0 !important;
+    margin-bottom: 20px;
+  }
+  .eui-Block2-BG, .kk-Block2-BG, .kabel-Block4-BG, .nvo-Block2-BG, .svet-Block4-BG, .svet-Block5-BG {
+    background-image: none !important;
+    background-color: $color_apricot_peach_approx;
+  }
+  .eui-Block3-BG, .kk-Block5-BG, .kabel-Block5-BG, .nvo-Block3-BG, .svet-Block3-BG {
+    background-image: none !important;
+    background-color: $color_alto_approx;
+  }
+  .eui-Block5-BG, .kk-Block3-BG, .kabel-Block3-BG, .nvo-Block5-BG {
+    background-image: none !important;
+    background-color: white !important;
+  }
+  .babelHead {
+    display: none;
+  }
+  .hideMob {
+    display: none;
+  }
+  .showMob {
+    display: block;
+    .mobItemUtp {
+      padding: 0 20px;
+      border-right: 3px solid $color_clementine_approx;
+      a {
+        display: block;
+        position: relative;
+        color: $color_clementine_approx;
+        font-size: 18px !important;
+        text-align: center;
+      }
+      h2 {
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+  }
+  .showMob {
+    display: block;
+    .mobItemUtp {
+      padding: 0 20px;
+      border-right: 3px solid $color_clementine_approx;
+      a {
+        display: block;
+        position: relative;
+        color: $color_clementine_approx;
+        font-size: 18px !important;
+        text-align: center;
+      }
+    }
+  }
+  .aboutFG {
+    h1 {
+      font-size: 24px !important;
+    }
+
+    p {
+      font-size: 16px !important;
+    }
+  }
+  .topMenu {
+    display: none;
+  }
+  .utp {
+    display: none;
+    margin-top: 20px !important;
+  }
+  #forummap {
+    display: none;
+  }
+  #header {
+    display: none;
+  }
+  .homeslide {
+    min-height: 270px !important;
+  }
+  .homeBlock1 {
+    background-image: none !important;
+    background-color: $color_alto_approx;
+    min-height: 50px !important;
+    margin-bottom: 20px;
+    img {
+      max-width: 140px;
+      max-width: 220px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .homeBlock2 {
+    background-image: none !important;
+    background-color: $color_alto_approx;
+    img {
+      max-width: 140px;
+      max-width: 220px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .homeBlock3 {
+    background-image: none !important;
+    background-color: $color_onahau_approx;
+    min-height: 0 !important;
+    img {
+      max-width: 140px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .homeBlock5 {
+    background-image: none !important;
+    background-color: $color_apricot_peach_approx !important;
+    min-height: 0 !important;
+    p {
+      font-size: 12px;
+    }
+  }
+  #laptopHeader {
+    display: flex;
+    padding: 0 15px;
+    .menubut {
+      font-size: 24px;
+      margin: 5px 0;
+    }
+    .dropdown-menu {
+      //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+      transform: translate3d(-171px, 55px, 0) !important;
+      //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+      transform: translate3d(-198px, 55px, 0) !important;
+    }
+    .babelHead {
+      padding-top: 14px;
+    }
+  }
+  #fixheader {
+    .dropdown-menu {
+      //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+      transform: translate3d(-171px, 55px, 0) !important;
+      //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+      transform: translate3d(-185px, 55px, 0) !important;
+    }
+    .topButtonGroup {
+      width: 100%;
+    }
+  }
+  #ecomFix {
+    font-size: 14px;
+    display: none;
+    margin-top: 12px;
+  }
+  .topButtonGroup {
+    justify-content: space-between;
+  }
+  .menubut {
+    padding-top: 5px !important;
+  }
+  .telep {
+    display: none;
+  }
+  .aboutFG {
+    text-align: center;
+    margin: 40px 0 0 0 !important;
+  }
+  .homeBlock4 {
+    min-height: 0 !important;
+  }
+  .footcont {
+    display: block;
+    justify-content: space-between;
+    a {
+      font-size: 18px;
+    }
+  }
+  #footbut {
+    display: none;
+  }
+  .orangeAbout {
+    background-size: cover !important;
+    background-image: none !important;
+    background-color: $color_alto_approx !important;
+  }
+  .orangeAbout3 {
+    background-size: cover !important;
+    background-image: none !important;
+    min-height: 0 !important;
+  }
+  .numbers {
+    text-align: center;
+  }
+  .numbersInner {
+    border-top: 1px solid $color_lynch_approx !important;
+    margin: 40px 0 !important;
+  }
+  .complexGray {
+    margin: 60px 0 !important;
+  }
+  .childText {
+    padding: 20px 3px !important;
+  }
+  .mobileRow {
+    margin: 0 !important;
+  }
+  .mobileP {
+    padding: 0 20px;
+  }
+  .posImg {
+    background-size: cover !important;
+  }
+  .logoFix {
+    display: none;
+  }
+  .dropdown-item {
+    font-size: 18px;
+  }
+  .march {
+    background-image: none !important;
+    background-color: $color_alto_approx !important;
+  }
+  .erem {
+    background-image: none !important;
+    background-color: $color_apricot_peach_approx !important;
+  }
+  .shush {
+    background-image: none !important;
+    background-color: $color_apricot_peach_approx !important;
+  }
+  .posBack {
+    font-size: 14px !important;
+  }
+  #carouselHistory {
+    display: none;
+  }
+  .polygon {
+    display: none;
+  }
+  .onle {
+    font-size: 12px;
+    padding: 0 10px;
+    h3 {
+      font-size: 22px;
+    }
+    .col-lg-12 {
+      padding: 0 !important;
+    }
+    .far {
+      display: none;
+    }
+    .fas {
+      display: none;
+    }
+  }
+  #footer {
+    padding: 40px 0 0;
+    .fab {
+      font-size: 46px;
+      margin-bottom: 40px;
+    }
+    .row {
+      text-align: center;
+    }
+    .footmenu {
+      padding: 0;
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+  .onlineHead {
+    background-image: none !important;
+    min-height: 0 !important;
+  }
+  .onlineBlack {
+    min-height: 0 !important;
+    h2 {
+      font-size: 26px !important;
+      padding: 0 20px !important;
+    }
+    p {
+      font-size: 16px !important;
+      padding: 0 20px 20px 20px !important;
+    }
+  }
+  .onlineBlock2 {
+    background-image: none !important;
+    background-color: $color_apricot_peach_approx !important;
+  }
+  .onlineBlock3 {
+    background-image: none !important;
+    background-color: $color_alto_approx !important;
+  }
+  .poizHead {
+    background-image: url(/assets/images/banners/proizmob.jpg) !important;
+    h1 {
+      font-size: 36px !important;
+      padding-top: 25px !important;
+      text-align: center !important;
+    }
+    p {
+      color: $white;
+      font-size: 16px !important;
+      padding-top: 20px !important;
+      text-align: center;
+    }
+  }
+  .bigBlue2 {
+    font-size: 32px !important;
+  }
+  .babelHead li {
+    list-style-type: none;
+    display: block;
+    width: 28px;
+    font-family: $font_0;
+    font-size: 20px;
+    text-align: center;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 10px;
+  }
+  .logoMob img {
+    padding-top: 17px;
+  }
+  .rowCr .row {
+    margin: 0 !important;
+  }
+  .rowBl .col-lg-12 {
+    padding: 0 !important;
+    padding: 0 !important;
+  }
+  #fixheader {
+    .babelHead {
+      display: flex;
+      padding-top: 10px;
+    }
+  }
+}
+
+.hrtop {
+  margin-top: 20px;
+}
+
+.onle {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  .fas {
+    font-size: 22px;
+    min-width: 65px;
+    padding: 0 20px;
+  }
+  .far {
+    font-size: 22px;
+    min-width: 65px;
+    padding: 0 20px;
+  }
+  .col-lg-12 {
+    padding-right: 50px;
+  }
+}
+
+.homeslide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.menubut {
+  background-color: $color_blue_bayoux_approx;
+  border: none;
+  font-size: 36px;
+  padding: 0 0 0 40px;
+  //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: 0.15s linear;
+  color: $white;
+  &:hover {
+    color: $color_clementine_approx;
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+    color: $color_clementine_approx;
+  }
+}
+
+.subTel {
+  font-size: 14px;
+  color: $color_slate_gray_approx;
+}
+
+.moscowi {
+  margin-bottom: 10px;
+  line-height: 20px;
+}
+
+.spbi {
+  line-height: 20px;
+}
+
+.logoMob img {
+  width: 220px;
+}
+
+.footIconGroup img {
+  padding: 18px 16px;
+}
+
+.bannerBG {
+  padding-top: 100px;
+}
+
+.bannerBG2 {
+  padding-top: 0px;
+}
+
+.bannerBG1 {
+  height: 90px;
+  //background-color: rgba(255,255,255,0.5);
+}
+
+.bannerHuge {
+  font-size: 44px;
+  color: $white;
+  font-weight: 600;
+}
+
+.textBg {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0 20px;
+  .textBgOrange {
+    color: $color_clementine_approx !important;
+  }
+}
+
+.posBack {
+  .posTitle {
+    cursor: pointer;
+  }
+}
+
+.dockar {
+  padding: 30px 0;
+  font-size: 18px;
+  font-weight: 600;
+  a {
+    text-decoration: none;
+    color: $color_pickled_bluewood_approx;
+    &:hover {
+      color: $color_clementine_approx;
+    }
+  }
+}

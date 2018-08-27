@@ -1,0 +1,87 @@
+@media (min-width: 991.98px){
+    .btn-small-screen{
+    display: none
+    }
+}
+@media (max-width: 991.98px){
+    .btn-big-screen{
+    display: none
+    }
+}
+.vacancy{
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.vacancy-icon{
+    margin-bottom: 10px;
+}
+.vacancy-header{
+    font-size: 20px; 
+    font-weight: 600;
+    margin-top: 20px;
+}
+.mini-header{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.career-accordion{
+    margin-top: 20px;
+    
+}
+.btn-link {
+    font-weight: 600;
+    color: #678293;
+    background-color: transparent;
+    padding-left: 0;
+}
+.btn-link:hover {
+    text-decoration: none;
+    color: #ef7101;
+}
+.card-header {
+    background-color: #eaeaea;
+}
+
+.btn:focus {
+text-decoration: none;
+}
+
+.vacancy-but {
+    padding: 7px 15px;
+    background-color: #5b6b72;
+    text-align: center;
+    color: #f9f9f9;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 0;
+    margin-bottom: 20px;
+
+}
+.vacancy-but:hover {
+    color: #f9f9f9;
+    background-color: #ef7101;
+    text-decoration: none;
+}
+.vacancy-block1 {
+    background-color: #eaeaea;
+    padding: 20px;
+    margin-bottom: 20px
+}
+
+.vacancy-block2 {
+    background-color: #eaeaea;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.vacancy-block3 {
+    background-color: #ffc9a3;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.vacancy-block1 p, .vacancy-block2 p, .vacancy-block3 p {
+    color: #678293;
+    font-size: 14px;
+    font-weight: 400;
+}

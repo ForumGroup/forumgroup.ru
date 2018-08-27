@@ -1,0 +1,454 @@
+//colors
+$color_turbo_approx: #e7de05;
+$color_french_rose_approx: #f64891;
+$color_clementine_approx: #ef7101;
+$color_alabaster_approx: #f9f9f9;
+$color_lynch_approx: #678293;
+$color_boston_blue_approx: #2b8eb5;
+$color_pickled_bluewood_approx: #2f4d59;
+$color_pancho_approx: #f4ceac;
+$color_alto_approx: #dcdcdc;
+$color_tuft_bush_approx: #f7dfca;
+$color_seashell_approx: #f1f0f0;
+$white: white;
+$black: black;
+$color_clementine_70_approx: rgba(238, 113, 5, 0.7);
+$color_bitter_approx: #848877;
+$color_masala_approx: #3d3d3d;
+
+//fonts
+$font_0: Open Sans;
+
+//urls
+$url_0: url(/assets/images/banners/utp1bg.jpg);
+$url_1: url(/assets/images/banners/utp2bg.jpg);
+$url_2: url(/assets/images/banners/utp3bg.jpg);
+$url_3: url(/assets/images/home/mbg1.jpg);
+$url_4: url(/assets/images/home/mbg2.jpg);
+$url_5: url(/assets/images/home/hbg1.jpg);
+$url_6: url(/assets/images/home/mbg3.jpg);
+
+//@extend-elements
+//original selectors
+//.homeBlock1 p, .homeBlock2 p, .homeBlock3 p, .homeBlock5 p
+%extend_1 {
+  font-family: $font_0;
+  color: $color_lynch_approx;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+#utpGroup {
+  display: flex;
+  justify-content: space-between;
+}
+.utp {
+  max-width: 350px;
+  background-color: $color_clementine_approx;
+  margin-top: -40px;
+  z-index: 100;
+  position: relative;
+  h2 {
+    font-family: $font_0;
+    color: $color_alabaster_approx;
+    font-size: 32px;
+    font-weight: 700;
+  }
+}
+h1 {
+  text-align: center;
+  font-family: $font_0;
+}
+.utpAbout {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  font-family: $font_0;
+  color: $color_alabaster_approx;
+  font-size: 18px;
+  font-weight: 400;
+  &:hover {
+    text-decoration: none;
+    color: $color_alabaster_approx;
+  }
+}
+.utpBG1 {
+  height: 266px;
+  max-width: 350px;
+  background-image: $url_0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px;
+}
+.utpBG2 {
+  height: 266px;
+  max-width: 350px;
+  background-image: $url_1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px;
+}
+.utpBG3 {
+  height: 266px;
+  max-width: 350px;
+  background-image: $url_2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px;
+}
+.aboutFG {
+  font-family: $font_0;
+  color: $color_lynch_approx;
+  font-size: 22px;
+  font-weight: 400;
+  margin: 100px 0 0;
+}
+#forummap {
+  width: 550px;
+  float: left;
+  padding-top: 30px;
+}
+.numbersInner {
+  width: 100%;
+  border-top: 2px solid $color_lynch_approx;
+  margin: 80px 0;
+}
+.numbers {
+  padding: 0 40px;
+}
+.bigBlue {
+  font-family: $font_0;
+  color: $color_boston_blue_approx;
+  font-size: 54px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 54px;
+  margin: 10px 0 0;
+}
+.smallGray {
+  font-family: $font_0;
+  color: $color_lynch_approx;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.homeBlock1 {
+  min-height: 604px;
+  background-image: $url_3;
+  background-size: contain;
+  padding: 20px 10px;
+  position: relative;
+  img {
+    width: 180px;
+    padding-bottom: 20px;
+  }
+  p {
+    @extend %extend_1;
+  }
+}
+.homeBlock2 {
+  min-height: 292px;
+  position: relative;
+  background-image: $url_4;
+  background-size: contain;
+  margin-bottom: 20px;
+  padding: 20px 10px;
+  p {
+    @extend %extend_1;
+  }
+  img {
+    width: 180px;
+    padding-bottom: 20px;
+  }
+}
+.homeBlock3 {
+  min-height: 292px;
+  position: relative;
+  background-image: $url_6;
+  background-size: contain;
+  margin-bottom: 20px;
+  padding: 20px 10px;
+  p {
+    @extend %extend_1;
+  }
+}
+.homeBlock5 {
+  min-height: 292px;
+  position: relative;
+  background-image: $url_5;
+  background-size: contain;
+  margin-bottom: 20px;
+  padding: 20px 10px;
+  background-color: $color_alto_approx;
+  p {
+    @extend %extend_1;
+  }
+}
+.homeBlock4 {
+  min-height: 292px;
+  position: relative;
+  background-color: $color_pancho_approx;
+  margin-bottom: 20px;
+}
+.homeTitleLink {
+  font-size: 18px;
+  padding-bottom: 10px;
+  display: block;
+  color: $color_pickled_bluewood_approx;
+  font-weight: 700;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.homeBlockLink {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  font-family: $font_0;
+  color: $color_pickled_bluewood_approx;
+  font-size: 14px;
+  font-weight: 400;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.homeNews {
+  h2 {
+    font-family: $font_0;
+    color: $color_pickled_bluewood_approx;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0 20px 10px 0;
+  }
+  .homeNew:first-of-type {
+    border-left: 2px solid $color_clementine_approx;
+  }
+}
+.homeNew {
+  padding-left: 20px;
+  border-left: 2px solid $color_tuft_bush_approx;
+  margin-bottom: 15px;
+}
+.newText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.newTitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 15px 0;
+  a {
+    font-family: $font_0;
+    color: $color_pickled_bluewood_approx;
+    font-size: 18px;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+.newDate {
+  font-family: $font_0;
+  color: $color_lynch_approx;
+  font-size: 16px;
+  font-weight: 400;
+}
+.complexGray {
+  margin: 100px 0;
+  min-height: 600px;
+  background-color: $color_seashell_approx;
+}
+.complex {
+  padding: 100px 0;
+  h2 {
+    font-family: $font_0;
+    color: $color_pickled_bluewood_approx;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  p {
+    font-family: $font_0;
+    color: $color_lynch_approx;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  img {
+    margin-left: calc(50% - 65px);
+    padding: 20px 0;
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: all 1s ease-out;
+  }
+}
+.complexLink {
+  padding-top: 20px;
+  a {
+    display: block;
+    &:hover {
+      display: block;
+      text-decoration: none;
+      p {
+        text-decoration: underline;
+      }
+    }
+  }
+  p {
+    text-align: center;
+    font-family: $font_0;
+    color: $color_clementine_approx;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  &:hover img {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: scale(1.1);
+  }
+}
+@media all and(-webkit-min-device-pixel-ratio:0) and(min-resolution: .001dpcm) {
+  .complexLink p {
+    background: linear-gradient(135deg, $color_turbo_approx 25%, $color_french_rose_approx 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.brandGroup {
+  padding-bottom: 30px;
+}
+.pos {
+  padding: 20px;
+}
+.posImg {
+  background-position: center;
+  background-size: cover;
+  display: block;
+  background-repeat: no-repeat;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.posBack {
+  font-size: 22px;
+  color: $white;
+  font-weight: 800;
+  width: 100%;
+  min-height: 262px;
+  //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  text-shadow: $black 0 0 2px;
+  //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: 0.15s linear;
+  &:hover {
+    background: transparent;
+    background: -moz-linear-gradient(45deg, rgba(231, 222, 5, 0.9) 0%, rgba(246, 72, 145, 0.9) 100%);
+    background: -webkit-gradient(45deg, color-stop(0%, rgba(231, 222, 5, 0.9)), color-stop(100%, rgba(246, 72, 145, 0.9)));
+    background: -webkit-linear-gradient(45deg, rgba(231, 222, 5, 0.9) 0%, rgba(246, 72, 145, 0.9) 100%);
+    background: -o-linear-gradient(45deg, rgba(231, 222, 5, 0.9) 0%, rgba(246, 72, 145, 0.9) 100%);
+    background: -ms-linear-gradient(45deg, rgba(231, 222, 5, 0.9) 0%, rgba(246, 72, 145, 0.9) 100%);
+    background: linear-gradient(45deg, rgba(231, 222, 5, 0.9) 0%, rgba(246, 72, 145, 0.9) 100%);
+    .posText {
+      display: block;
+    }
+  }
+}
+.posText {
+  font-family: $font_0;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+  padding: 0 20px;
+  display: none;
+}
+.posTextW {
+  font-weight: 600;
+}
+.posTitle {
+  padding: 20px;
+}
+.posTitleUnder {
+  padding: 20px 0;
+  font-size: 24px;
+  a {
+    color: $color_lynch_approx;
+    &:hover {
+      color: $color_clementine_approx;
+      text-decoration: none;
+    }
+  }
+}
+.postavkaBG {
+  width: 100%;
+  height: 450px;
+  background-position: center;
+}
+.carousel-indicators {
+  top: 30px;
+  .active {
+    background-color: $color_clementine_approx;
+  }
+}
+hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 0;
+  border-top: 1px solid $white;
+  width: 200px;
+}
+.partnerImage {
+  //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+  transform: scale(0.8);
+  //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: all 1s ease-out;
+  padding: 5px 0;
+  display: block;
+  margin: auto;
+  &:hover {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: scale(1.0);
+  }
+}
+#map {
+  width: 100%;
+  height: 360px;
+  padding: 0;
+  margin: 0;
+}
+.b-simple-balloon-layout {
+  position: relative;
+  width: 150px;
+  padding: 10px;
+  margin-left: -10px;
+  border: 1px solid $color_bitter_approx;
+  background: $color_masala_approx;
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+}
+.projects h2 {
+  font-family: $font_0;
+  color: $color_pickled_bluewood_approx;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.brand h2 {
+  font-family: $font_0;
+  color: $color_pickled_bluewood_approx;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
