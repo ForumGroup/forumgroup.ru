@@ -738,6 +738,8 @@ proizRU1 p {
 
 .col-lg-6 .productLogoIcon {
   float: none;
-  text-align: center; }
+  text-align: center;
+  height: 100px;
+  padding-bottom: 40px; }
 
 /*# sourceMappingURL=child.css.map */
